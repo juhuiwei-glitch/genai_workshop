@@ -1,16 +1,24 @@
 # Purpose
 Design a flash-card application for Japanese language learning.
 
+# User Flow
+1. User opens the app; the vocabulary list is shuffled and the first card is displayed (random side).
+2. User clicks the card to flip between Japanese and English sides.
+3. User navigates through cards using the "Previous" and "Next" buttons.
+4. The app maintains the shuffled order as the user browses.
+5. User can repeat flipping and navigation as desired.
+
 # Features
 1. **Flash Card Display**:
-   - When the page loads, a flash card is displayed in the center of the screen.
+   - The background color of the page is black.
+   - When the page loads, a flash card is displayed in the center of the screen. The card is also in black, with the words in white.
    - Each card has two sides (e.g., Japanese word on one side, English meaning on the other).
+   - The Japanese side shows both Kanji and Hiragana/Katakana.
    - One side is shown randomly when the page loads.
    - Clicking the card flips it to reveal the other side with a 2D horizontal flipping animation.
 
 2. **Title**:
-   - A title is displayed at the top of the page: "Japanese Flash Card".
-   - The title is shown in both English and Japanese: 日本語フラッシュカード.
+   - A title is displayed at the top of the page: "Japanese Flash Card" and "日本語フラッシュカード".
 
 3. **Navigation Buttons**:
    - Two buttons are placed on either side of the flash card:
@@ -28,6 +36,12 @@ Design a flash-card application for Japanese language learning.
    - **Text**: White.
    - **Flash Card**: Dark gray.
      - On hover, the card becomes slightly lighter gray while keeping the text clear.
+
+# Responsiveness
+- The app layout and buttons should adapt for mobile devices.
+- Flash card and navigation buttons should be easily tappable.
+- Text should remain readable on small screens.
+- Flipping animation and navigation should work with touch input.
 
 # Vocabulary.js
 - In this version, users cannot add new vocabulary.
