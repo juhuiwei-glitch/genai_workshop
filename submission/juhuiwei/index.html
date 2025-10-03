@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japanese Flash Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Japanese Flash Card<br><span class="jp-title">日本語フラッシュカード</span></h1>
+  </header>
+  <main>
+    <button id="prev-btn" aria-label="Previous card">前へ<br><span class="kana">まえへ</span></button>
+    <div id="flash-card" tabindex="0" aria-label="Flash card">
+      <div class="card-inner">
+        <div class="card-front"></div>
+        <div class="card-back"></div>
+      </div>
+    </div>
+    <button id="next-btn" aria-label="Next card">次へ<br><span class="kana">つぎへ</span></button>
+  </main>
+  <script src="vocabulary.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
